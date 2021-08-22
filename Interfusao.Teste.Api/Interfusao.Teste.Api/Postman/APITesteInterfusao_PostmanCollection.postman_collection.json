@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "083a2736-5e13-4d05-ab08-d3e543fc94bb",
+		"name": "APITesteInterfusao_PostmanCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:44365/api/Analises",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"Id\":1,\r\n    \"DataSolicitacao\":\"21/08/2021 12:00\",\r\n    \"DataTarget\":\"31/08/2021 10:00\",\r\n    \"AnaliseConcluida\":false,\r\n    \"DataConclusao\":\"\",\r\n    \"Resultado\":\"\"\r\n  }\r\n  ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44365/api/Analises",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44365",
+					"path": [
+						"api",
+						"Analises"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44365/api/Analises",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44365/api/Analises",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44365",
+					"path": [
+						"api",
+						"Analises"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44365/api/Analises/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"Id\":1,\r\n    \"DataSolicitacao\":\"21/08/2021 12:00\",\r\n    \"DataTarget\":\"31/08/2021 10:00\",\r\n    \"AnaliseConcluida\":true,\r\n    \"DataConclusao\":\"25/08/2021 16:00\",\r\n    \"Resultado\":\"O item não apresentou os elementos X, Y e Z\"\r\n  }\r\n  ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44365/api/Analises/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44365",
+					"path": [
+						"api",
+						"Analises",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44365/api/Analises/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44365/api/Analises/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44365",
+					"path": [
+						"api",
+						"Analises",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
